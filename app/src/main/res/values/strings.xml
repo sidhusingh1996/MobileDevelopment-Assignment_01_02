@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AssignmentDiceGame</string>
+    <string name="computer">Computer </string>
+    <string name="player">Player </string>
+    <string name="lower"> Lower </string>
+    <string name="higher">  Higher </string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cpu_dice"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/computer"
+        android:textColor="#F1B70B"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/cpu_dice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/player_dice"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_dice"
+        app:srcCompat="@drawable/dice6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/player"
+        android:textColor="#FFC107"
+        android:textColorHighlight="#370808"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/player_dice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_dice">
+
+        <Button
+            android:id="@+id/button_lower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lower" />
+
+        <Button
+            android:id="@+id/button_higher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/higher" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/result_pic"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="552dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dicee_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
